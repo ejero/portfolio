@@ -73,19 +73,17 @@ a:hover{
 
 main > p:nth-child(1) {
 	font-size: 9em;
-	color:#514b4b;
-	text-shadow: #e4c4e8 1px 1px 5px;
+	color:#ffffff;
+	text-shadow: #7c787d 1px 1px 5px;
 }
 
 /* Add a Linear gradient to name*/
 .name-style{
 	font-size: 25em;
-	font-family: 'Londrina Shadow', cursive;
-	background-image: linear-gradient(#e66465, #616ce8);
-	background-clip: text;
-	color: transparent;
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	/* font-family: 'Londrina Shadow', cursive; */
+	font-family: 'Londrina Solid', cursive;
+	color: #ffffff;
+	text-shadow: #414042 1px 1px 5px;
 }
 
 
@@ -109,3 +107,17 @@ footer{
 	background-color: #f5f5f5;
 }
 
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* background: #b4aeae; */
+	/* background-image: linear-gradient(#e3a34a, #616ce8); */
+
+	/* background: 
+	linear-gradient(217deg, #0d92dfcc, #ff000000 100%),
+    linear-gradient(27deg, #15a40bd2, #0000ff00 100%); */
+
+	background: -webkit-linear-gradient(left,#3dac86,#337aee);
+}
