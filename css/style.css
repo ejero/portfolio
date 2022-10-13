@@ -1,0 +1,99 @@
+/*
+Colors: 
+#e8a8a8 - Pink
+#9198e5 - Light purple
+*/
+
+body, html{
+	box-sizing: border-box;
+	height: 100%;
+}
+
+/********* Flexbox styles   *************/
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 1px 8px #d9d6d6;
+}
+
+li{
+	display: inline-block;
+	margin-top: 12px;
+	margin-bottom: 7px;
+	padding: 0 10px 0 10px;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	height: 90vh;
+}
+
+
+/************** Nav Bar styles & text syles   *************/
+
+a{
+	text-decoration: none;
+	color:#998d8d;
+	font-family: 'Noto Sans Ethiopic', sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+/* Add hover when mouse hovers link*/
+.nav-bar a:after{
+    content: '';
+    display: block;
+    border-bottom: solid 3px #454444;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+/* Add hover when mouse hovers link*/
+.nav-bar a:hover:after{
+    transform: scaleX(1);
+}
+
+a:hover{
+	color: #190f0c;
+}
+
+main > p:nth-child(1) {
+	font-size: 9em;
+	color:#514b4b;
+}
+
+.name-style{
+	font-size: 25em;
+	font-family: 'Londrina Shadow', cursive;
+	background-image: linear-gradient(#e66465, #616ce8);
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+footer{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-color: #616ce8;
+}
+
+.push-footer, footer{
+	/* This will push the footer down and make it sticky */
+	position: sticky;
+	top:100vh;
+	height: 150px;
+}
+
+/*********  Background styles   *************/
+
+.container{
+	background-color: linear-gradient(#e66465, #616ce8);
+}
