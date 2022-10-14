@@ -98,6 +98,10 @@ main > p:nth-child(3), main > p:nth-child(4){
     color: #ffffff;
 }
 
+main > p:nth-child(4){
+	padding-bottom: 20px;
+}
+
 /* Bio Styles */
 .about{
 	display: flex;
@@ -130,6 +134,21 @@ img{
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	margin-bottom: 2%;
+}
+
+
+/* Experience styles */
+.expierence , h1{
+	font-family: 'Noto Sans Ethiopic', sans-serif;
+	font-size: 5em;
+	color: #ffff;
+}
+
+.portfolio{
+	font-family: 'Noto Sans Ethiopic', sans-serif;
+	font-size: 1em;
+	color: #ffff;
+	text-transform: capitalize;
 }
 
 
