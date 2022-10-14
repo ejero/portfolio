@@ -311,3 +311,38 @@ ul li .icon:hover{
     color: #ffffff;
     text-shadow: #414042 1px 1px 5px;
 }
+
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.name-style{
+		font-size: 18em;
+	}
+
+	main > p:nth-child(1){
+		font-size: 5em;
+	}
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.name-style{
+		font-size: 11em;
+	}
+
+	main > p:nth-child(1){
+		font-size: 3em;
+	}
+
+}
+
+
+@media all and (max-width: 480px) { 
+	.name-style{
+		font-size: 5em;
+	}
+
+	main > p:nth-child(1){
+		font-size: 2em;
+	}
+}
