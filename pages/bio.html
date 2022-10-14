@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosita's Portfolio</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Noto+Sans+Ethiopic:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid&family=Noto+Sans+Ethiopic:wght@300&display=swap" rel="stylesheet">
+    <title>Testing</title>
 </head>
 <body>
-    <div class="container">
-    <!-- MENU BAR -->
+    <div id="particles-js"></div>
+    <div id="page-container">
+        <div id="content-wraper">
+
         <nav class="nav-bar">
-            <ul>
-                <li class="nav-item">
-                    <a href="../index.html">home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="bio.html">about me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="experience.html">expierence</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html">portfolio</a>
-                </li>
-            </ul>
-        </nav>
+            <a class="nav-link" href="../index.html">home</a>
+            <a class="nav-link" href="bio.html">bio</a>
+            <a class="nav-link" href="../pages/experience.html">expierence</a>
+            <a class="nav-link" href="../pages/portfolio.html">portfolio</a>
+        </nav>   
+
+        <main>
+            <p>About Me</p>
+        
+        </main>
     </div>
-    <main>
-    
-        <div class="push-footer"></div>
-    </main>
-    <footer>
-        <p>My footer</p>
+    <footer id="footer">
+        <p>Let's Keep in Touch</p>
+        <ul>
+            <li><a class="icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a class="icon" href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a class="icon" href="#"><i class="fa-regular fa-envelope"></i></a></li>
+        </ul>
     </footer>
+</div>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/561653a603.js" crossorigin="anonymous"></script>
 </body>
 </html>

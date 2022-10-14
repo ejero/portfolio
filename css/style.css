@@ -1,123 +1,15 @@
+/*******  Colors ********/
 /*
-Colors: 
-#e8a8a8 - Pink
-#9198e5 - Light purple
+Nav text -#ffffff - White
+Nav background - rgb(51, 122, 238, .5 (opacity .5) - blue 
+Main Body p - #ffffff - White 
+
+
+
 */
 
-body, html{
-	box-sizing: border-box;
-	height: 100%;
-	overflow:hidden;
-	/* background-attachment: fixed; */
-}
 
-
-/********* Flexbox styles   *************/
-#flex-wrapper{
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-
-.container{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	/* box-shadow: 0 1px 8px #d9d6d6; */
-	/* postion relative so box-shadow will show*/
-	position: relative;
-}
-
-li{
-	display: inline-block;
-	margin-top: auto;
-	/* margin-bottom: 7px; */
-	padding: 0 10px 0 10px;
-}
-
-main{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	-webkit-align-items: center;
-}
-
-.space{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-}
-
-
-
-/************** Nav Bar styles & text syles   *************/
-
-/* .nav-bar{
-	backdrop-filter: blur(5px);
-	background-color: rgb(52, 124, 239, .17);
-} */
-
-/* Makes the navbar stick to the top as you scroll */
-.container{
-	position: sticky;
-	top:0;
-	backdrop-filter: blur(5px);
-	background-color: rgb(52, 124, 239, .20);
-	height: 5%;
-}
-
-a{
-	text-decoration: none;
-	color:#ffffff;
-	font-family: 'Noto Sans Ethiopic', sans-serif;
-	font-size: 1.2em;
-	text-transform: uppercase;
-}
-
-/* Add hover when mouse hovers link*/
-.nav-bar .item:after{
-    content: '';
-    display: block;
-    border-bottom: solid 3px #454444;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-}
-/* Add hover when mouse hovers link*/
-.nav-bar .item:hover:after{
-    transform: scaleX(1);
-}
-
-.item:hover{
-	/* color: #a0d0df; */
-	text-shadow: #aa4cae 1px 0 2px;
-}
-
-main > p:nth-child(1) {
-	font-size: 7em;
-	color:#ffffff;
-	text-shadow: #7c787d 1px 1px 5px;
-	font-family: 'Noto Sans Ethiopic', sans-serif;
-	margin-top: 8%;
-}
-
-.name-style{
-	font-size: 24em;
-	/* font-family: 'Londrina Shadow', cursive; */
-	font-family: 'Londrina Solid', cursive;
-	color: #ffffff;
-	text-shadow: #414042 1px 1px 5px;
-	
-}
-
-
-/*********  Background styles   *************/
-
-
+/*********  JS Background styles   *************/
 #particles-js{
     position: absolute;
     width: 100%;
@@ -126,20 +18,128 @@ main > p:nth-child(1) {
 	background: -webkit-linear-gradient(left,#3dac86,#337aee);
 }
 
-/************ Footer glass Styles ************/
-
-footer{
-	display: flex;
-	flex-direction: column;
-	justify-content:space-between;
-	align-items: center;
-	backdrop-filter: blur(5px);
-	width: 100%;
-
+/************ Flex box *****************/
+#page-container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-bar, .nav-item{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    flex-shrink: 0;
+}
+
+#footer{
+    margin-top: auto;
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4786ed;
+    padding-top: 2%;
+    padding-bottom:2%;
+}
+
+
+
+/***************** Maain Content Styles ********************/
+
+main > p:nth-child(1) {
+	font-size: 7em;
+	color:#ffffff;
+	text-shadow: #7c787d 1px 1px 5px;
+	font-family: 'Noto Sans Ethiopic', sans-serif;
+	margin-top: 5%;
+}
+
+
+.name-style{
+    font-size: 20em;
+	/* font-family: 'Londrina Shadow', cursive; */
+	font-family: 'Londrina Solid', cursive;
+	color: #ffffff;
+	text-shadow: #414042 1px 1px 5px;
+}
+
+main > p:nth-child(4){
+    margin-top: 2%;
+    width: 50%;
+}
+
+main > p:nth-child(3){
+    font-weight: 700;
+    text-shadow: #000 1px 0 1px;
+    font-size: 1.5em;
+}
+
+main > p:nth-child(3), main > p:nth-child(4){
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    color: #ffffff;
+}
+
+/************** Nav Bar styles & text syles   *************/
+a{
+	text-decoration: none;
+	color:#ffffff;
+	font-family: 'Noto Sans Ethiopic', sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.nav-bar{
+    background-color: rgb(51, 122, 238, .5);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.nav-link{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+}
+
+.nav-link:after{
+    content: '';
+    display: block;
+    border-bottom: solid 3px #12c630;
+    transform: scaleX(0);
+    transition: transform 270ms ease-in-out;
+}
+
+.nav-link:hover:after{
+    transform: scaleX(1);
+}
+
+/* Add hover when mouse hovers link*/
+a:hover{
+    color:#12c630;
+}
+
+
+/************ Footer glass Styles ************/
 ul{
-	position: relative;
+    position: relative;
+    display: flex;
 }
 
 ul li {
@@ -149,18 +149,19 @@ ul li {
 }
 
 ul li .icon{
-	position: relative;
+    position: relative;
 	width: 70px;
 	height: 70px;
 	display: inline-block;
-
+    text-decoration: none;
 	/* Add border all aournd to give a "glass" effect */
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	border-right: 1px solid rgba(255 , 255, 255, 0.2);
 	border-bottom: 1px solid rgba(255 , 255, 255, 0.2);
 	border-radius: 5px;
-	box-shadow: 0 5px 45px rgba(0,0,0,0.4);
-	backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 5px 45px rgba(0,0,0,0.6);
+	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 
 	/* Move icons to the center of the box*/
@@ -169,4 +170,16 @@ ul li .icon{
 	align-items: center;
 	font-size: 1.5em;
 	color: #ffffff;
+}
+
+ul li .icon:hover{
+    color:#12c630;
+}
+
+#footer > p{
+    font-size: 1.5em;
+    padding-bottom: 1%;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    color: #ffffff;
+    text-shadow: #414042 1px 1px 5px;
 }
