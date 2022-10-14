@@ -98,6 +98,19 @@ main > p:nth-child(3), main > p:nth-child(4){
     color: #ffffff;
 }
 
+/* Bio Styles */
+.about{
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	
+}
+img{
+	max-width: 300px; 
+    max-height: 300px;
+	padding-bottom: 20px;
+}
+
 /************** Nav Bar styles & text syles   *************/
 a{
 	text-decoration: none;
