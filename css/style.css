@@ -134,6 +134,12 @@ button > a:hover{
 
 /***************** Maain Content Styles ********************/
 
+h2{
+	margin-top: 12%;
+	font-family: 'Noto Sans Ethiopic', sans-serif;
+	font-size: 40px;
+}
+
 main > p:nth-child(1) {
 	font-size: 7em;
 	color:#ffffff;
@@ -190,6 +196,7 @@ main > p:nth-child(4){
 	font-size: 1.2em;
 	padding-bottom: 20px;
 }
+
 
 /* Bio glass style */
 .about{
